@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    font-size: x-large;
+}
+.container{
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    grid-column-gap:-10%;
+
+}
+.calculadora{
+    padding-left: 30%;
+}
+#container-history{
+    display: block;
+    border-radius: 1%;
+    transform: rotate(3deg);
+    height: 100%;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.7;
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 7px -7px 0px -2px, rgb(31, 193, 27) 7px -7px, rgb(255, 255, 255) 14px -14px 0px -2px, rgb(255, 217, 19) 14px -14px, rgb(255, 255, 255) 21px -21px 0px -2px, rgb(255, 156, 85) 21px -21px;/*, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;*/
+}
+h1, h3{
+    text-align: center;
+    color:cornflowerblue
+}
+h4{
+    font-family: 'Indie Flower', cursive;
+    font-size: x-large;
+}
+#title-history{
+    font-family: 'Indie Flower', cursive;
+    font-size: xx-large;
+}
+
+.title{
+    padding-bottom: 3%;
+}
+
+form{
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: solid 1px #c2c2c2;
+    border-radius: 5%;
+    padding-bottom: 10px;
+    margin: auto;
+    background: rgb(106, 97, 97);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+form input[type="button"]
+{
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#insset {
+    margin-left: 6%;
+    margin-right: 6%;
+    border: solid;
+    border-style: inset;
+    border-width: 4px;
+}
+.shadow{
+    border-radius: 5%;
+    width: max-content;
+    box-shadow: white 3.95px 3.95px 2.6px;
+}
+
+#operacion,#resultado {
+    font-family: 'Press Start 2P', cursive;
+    width: 100%;
+    padding: 16px 32px;
+    font-size: 20px;
+    border: 1px solid silver;
+    border-radius: 1px;
+    text-align: left;
+    color: #333;
+    background: #ccc;
+    text-align: right;
+}
+
+  input[type=button], input[type=submit]{
+      background-color: darkblue ;
+      font-weight: 600;
+      font-size: 20px;
+      color: #ffffff;
+      border-radius: 15%;
+      color: white;
+      padding: 16px 32px;
+      font-size: 16px;
+      min-width: 21%;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+  }
+  /*media*/
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: rgb(56, 8, 187);
+  }
